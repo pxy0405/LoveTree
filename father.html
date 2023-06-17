@@ -14,7 +14,7 @@
     <script type="text/javascript" src="./index_files/jscex-async-powerpack.min.js"></script>
     <script type="text/javascript" src="./index_files/functions.js" charset="utf-8"></script>
     <script type="text/javascript" src="./index_files/love.js" charset="utf-8"></script>
-    <script type="text/javascript" src="./config.js"></script>
+    <script type="text/javascript" src="./config_fa.js"></script>
     <style type="text/css">
         <!--
         .STYLE1 {
@@ -68,13 +68,13 @@
 </div>
 
 <script type="text/javascript">
-    $('#code').html(config.lines.map(item => {
+    $('#code').html(config_fa.lines.map(item => {
         return `<span class="say">${item}</span><br>
 						<span class="say"> </span><br>`
     }).reduce((a, b) => {
         return a + b;
     }))
-    $("#clock-box-inside-text").html(`${config.names[0]}<span class="STYLE1">的小棉袄</span> ${config.names[1]}<span class="STYLE1">已经出生了</span>`)
+    $("#clock-box-inside-text").html(`${config_fa.names[0]}<span class="STYLE1">的小棉袄</span> ${config_fa.names[1]}<span class="STYLE1">已经出生了</span>`)
 </script>
 
 <script>
